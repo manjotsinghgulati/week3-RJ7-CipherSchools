@@ -1,5 +1,6 @@
 import React from 'react';
 import './Test.css';
+import PropTypes from "prop-types"
 
 const Test = ({ name = "", setName }) => {
     return (
@@ -25,5 +26,10 @@ const Test = ({ name = "", setName }) => {
 //         );
 //     }
 // }
+
+Test.propTypes = {
+    name: PropTypes.string,
+    setName: PropTypes.func,
+}
 
 export default Test;
