@@ -23,14 +23,14 @@ const SignUpForm = () => {
             <form
                 onSubmit={(e) => {
                     e.preventDefault();
-                    if (isValidUser ({ 
-                        firstName: state.firstName, 
-                        lastName: state.lastName, 
-                        email: state.email, 
-                        password: state.password 
-                        })
-                    )
-                    {console.log("User is Valid" ,state);}
+                    // if (isValidUser ({ 
+                    //     firstName: state.firstName, 
+                    //     lastName: state.lastName, 
+                    //     email: state.email, 
+                    //     password: state.password 
+                    //     })
+                    // )
+                    // {console.log("User is Valid" ,state);}
                 }}
 
             >

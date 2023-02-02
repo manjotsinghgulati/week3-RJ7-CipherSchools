@@ -1,22 +1,26 @@
+import React from 'react';
 import './App.css';
-import Test from './components/Test'
-import AllUserList from './components/AllUserList'
-import Name from './components/Name'
-import SumNumber from './components/SumNumber';
-import SignUpForm from './components/SignUpForm';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
 
-function App() {
-  return (
+const App = () =>{
+  return(
+    
     <div className="App">
-    {/* <Test key={1} /> */}
-
-    {/* <AllUserList /> */}
-    {/* <Name /> */}
-    {/* <SumNumber /> */}
-    <SignUpForm />
-
+    <Header />
+      <BrowserRouter>
+        <Routes>  
+          <Route path={"/"} element={<h1>This is on Home Page</h1>} />
+          <Route path={"/contact"} element={<h1>This is on Conatct Page</h1>} />
+          {/* <Route path="/about" element={<About />} />
+          {/* <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} /> */}
+        </Routes>
+      </BrowserRouter>
     </div>
-  );
+  )
 }
 
 export default App;
