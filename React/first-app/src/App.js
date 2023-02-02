@@ -3,6 +3,7 @@ import Test from './components/Test'
 import AllUserList from './components/AllUserList'
 import Name from './components/Name'
 import SumNumber from './components/SumNumber';
+import SignUpForm from './components/SignUpForm';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
 
     {/* <AllUserList /> */}
     {/* <Name /> */}
-    <SumNumber />
+    {/* <SumNumber /> */}
+    <SignUpForm />
 
     </div>
   );
