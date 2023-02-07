@@ -7,6 +7,7 @@ import CounterComponent from './components/CouterComponent';
 import Photos from './components/Photos';
 import higherOrderComponent from './components/Hoc';
 import SampleRenderProps from './components/SampleRenderComponents';
+import I18Component from './components/I18Component';
 
 const App = () =>{
   const TestApp = higherOrderComponent(() => {
@@ -24,6 +25,8 @@ const App = () =>{
           <Route path={"/photos"} element={<Photos />} />
           <Route path={"/hoc"} element={<TestApp />} />
           <Route path={"/sample"} element={<SampleRenderProps />} />
+          <Route path={"/international"} element={<I18Component />} />
+          
         </Routes>
       </BrowserRouter>
     </div>
